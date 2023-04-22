@@ -15,8 +15,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/hemanthbot69/Auto-Filter-V5-V",
-    "repository": "https://github.com/hemanthbot69/Auto-Filter-V5-V",
+    "website": "https://github.com/DemonslayerTheEvil/Auto-Filter-V5-V",
+    "repository": "https://github.com/DemonslayerTheEvil/Auto-Filter-V5-V",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
