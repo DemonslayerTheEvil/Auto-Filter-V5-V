@@ -13,9 +13,9 @@ def is_enabled(value, default):
 # Bot information
 PORT = environ.get("PORT", "8080")
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '25129938'))
-API_HASH = environ.get('API_HASH', '250f48fc7711caffe8f1994b80e890d9')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6146215804:AAFIiaZ7AM0QBeeFVnzOPRTJd02jlxwN_PA")
+API_ID = int(environ.get('API_ID', '28341884'))
+API_HASH = environ.get('API_HASH', 'ca0c9295ce3ec910fd6f49e99970d9a8')
+BOT_TOKEN = environ.get('BOT_TOKEN', "6013001781:AAFLMc96hM-5JZIckSygYWmZBca3QZvh9kw")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -27,9 +27,9 @@ SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/8ee413afc32e5b393e
 NEWGRP = environ.get("NEWGRP", "https://telegra.ph/file/07c14729659c7c2b99f5a.jpg")
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1970524144').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001535606891').split()]
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1970524144').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5676827158').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001918172990').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '5676827158').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL')
 auth_grp = environ.get('AUTH_GROUP')
@@ -37,25 +37,25 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Hemanthbot69:u5sbrWrHisuAiUd5@cluster0.edfgvhi.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Hemanthbot69")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://aashukr5578:mEkWyhhwVqMFIdPY@cluster0.z49nllu.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0)
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Channel Button Links
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+Ze882k0-zJ02Y2Jl')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/movies_mania_2023')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/+Ze882k0-zJ02Y2Jl')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Aashu_links')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Divider_Channel')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/Movie_BIND')
 MSG_ALRT = environ.get('MSG_ALRT', 'Share and Support Us')
 
 # Custom Chats
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', -1001788766416))
-FILE_CHANNEL = int(environ.get('FILE_CHANNEL', -1001835077729))
-FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', 'https://t.me/+ZMbo-EkX_cMyMGE1')
-HOW_DWLD_LINK = environ.get('HOW_DWLD_LINK', 'https://t.me/movies_mania_69_backup/68')
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', -1001887641671))
+FILE_CHANNEL = int(environ.get('FILE_CHANNEL', ))
+FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', '')
+HOW_DWLD_LINK = environ.get('HOW_DWLD_LINK', '')
 
 # Log Channels
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001881182715))
-RQST_LOG_CHANNEL = int(environ.get('RQST_LOG_CHANNEL', -1001881182715))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001843928263)
+RQST_LOG_CHANNEL = int(environ.get('RQST_LOG_CHANNEL', -1001947842151))
 
 # Bot Options
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
@@ -85,8 +85,8 @@ SPL_DELETE_TIME = int(environ.get('SPL_DELETE_TIME', 15))
 
 # URL SHORTNER
 
-URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'tinyfy.in')
-URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', 'bfb684a774d3937279c71adbea26310527db388b')
+URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'omegalinks.in')
+URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '69767ef02ba3b32e7ecb823610cd3f107a88c99b')
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
